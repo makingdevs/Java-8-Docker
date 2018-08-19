@@ -11,8 +11,6 @@ RUN rm jdk-8u171-linux-x64.rpm
 
 RUN yum -y install initscripts && yum clean all
 
-COPY init.sh /usr/local/bin/init_server.sh
-
 ARG FILE_NAME_CONFIGURATION
 ARG PATH_NAME_CONFIGURATION
 RUN mkdir $PATH_NAME_CONFIGURATION
